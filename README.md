@@ -4,7 +4,7 @@ watcher 공통 모듈
 
 ## project source download
 ```go
-$ git clone https://github.com/bonoken/watcher-common
+$ git clone https://github.com/bonoken/watcher-common.git
 ```
 
 ## GO Module 적용 방법
