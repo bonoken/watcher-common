@@ -1,24 +1,28 @@
 # watcher-common
-
 watcher 공통 모듈
+
+## 개발 환경
+golang version : 1.13 <p>
+web framework : echo <p>
+front-end : react js, redux
 
 ## project source download
 ```go
 $ git clone https://github.com/bonoken/watcher-common.git
 ```
 
-## GO Module 적용 방법
+## Go Module 적용 방법 (from golang version 1.11 )
 ```go
-// GO Module을 첫 설정
+// Go Module init
 $ go mod init github.com/bonoken/watcher-common
 $ go build
 
-// 옵션으로 vendor 명령어를 사용하면 vendor 라는 디렉토리가 생성되며, 의존성 패키지를 vendor디렉토리로 자동으로 
+// 옵션으로 vendor 명령어를 사용하면 vendor 라는 디렉토리가 생성되며, 의존성 패키지를 복사해 
 $ go mod vendor 
 $ go run -mod vendor main.go
 ```
 * 주의 사항 :
-go modules 사용하게 되면 상대경로를 사용 못 함. 프로젝트 내부 상대경로를 변경 "../global" -> "모듈이름/global"
+go modules 사용하게 되면 상대경로를 사용 못 함. 프로젝트 내부 상대경로를 변경 "../global" -> "모듈명/global"
 
 ## 모듈 설명
 ### config
